@@ -4,6 +4,7 @@ namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Parsedown;
 
 class Answer extends Model
 {
@@ -14,7 +15,7 @@ class Answer extends Model
 
     public function getBodyHtmlAttribute()
     {
-//        return clean(Parsedown::instance()->text($this->body));
+        return Parsedown::instance()->text($this->body);
     }
 //question-relationship
     public function question()

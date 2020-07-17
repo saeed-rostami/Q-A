@@ -11,7 +11,8 @@
                         <answer v-on:deleted="remove(index)" v-for="(answer, index) in answers" v-bind:answer="answer" v-bind:key="answer.id"></answer>
 
                         <div class="text-center mt-3" v-if="nextUrl">
-                            <button class="btn btn-outline-secondary" v-on:click.prevent="fetch(nextUrl)">Show More</button>
+                            <button class="btn btn-outline-secondary" v-on:click.prevent="fetch(nextUrl)">نمایش
+                            بیشتر</button>
                         </div>
                     </div>
                 </div>

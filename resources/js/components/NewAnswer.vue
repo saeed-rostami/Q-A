@@ -4,7 +4,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">
-                            <h3>Your Answer</h3>
+                            <h3>پاسخ شما</h3>
                         </div>
                         <hr>
                         <form method="post" v-on:submit.prevent="create">
@@ -13,7 +13,8 @@
                                 <textarea class="form-control" rows="7" name="body" v-model="body" required></textarea>
                             </div>
                             <div class="form-group">
-                                <button v-bind:disabled="isInvalid" class="btn btn-lg btn-outline-primary" type="submit">Send</button>
+                                <button v-bind:disabled="isInvalid" class="btn btn-lg btn-outline-primary"
+                                        type="submit">ارسال</button>
                             </div>
 
                         </form>

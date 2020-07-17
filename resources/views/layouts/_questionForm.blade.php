@@ -12,7 +12,7 @@
 
 
 <div class="form-group {{$errors->has('body') ? 'is-invalid' : ''}}">
-    <label for="question_body">Explain Question</label>
+    <label for="question_body">متن پرسش</label>
     <textarea type="text" rows="10" name="body" id="question_body"
               class="form-control">{{old('body' , $question->body ?? '')}}</textarea>
 </div>

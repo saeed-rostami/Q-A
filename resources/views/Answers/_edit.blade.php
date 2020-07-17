@@ -7,10 +7,10 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title d-flex align-items-center">
-                            <h3>Edit Your Answer for question: <strong>{{$question->title}}</strong> </h3>
+                            <h3>ویرایش پاسخ شما: <strong>{{$question->title}}</strong> </h3>
                             <div class="ml-auto">
-                                <a class="btn btn-outline-secondary" href="{{route('questions.show' , $question->slug)}}">Back To The
-                                    Question</a>
+                                <a class="btn btn-outline-secondary" href="{{route('questions.show' , $question->slug)}}">بازگشت به
+                                    قسمت پرسرش ها</a>
                             </div>
                         </div>
                         <hr>
@@ -26,7 +26,7 @@
                                 @endif
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-lg btn-outline-primary" type="submit">Update</button>
+                                <button class="btn btn-lg btn-outline-primary" type="submit">بروزرسانی</button>
                             </div>
 
                         </form>

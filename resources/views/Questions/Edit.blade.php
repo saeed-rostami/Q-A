@@ -7,17 +7,18 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex align-items-center">
-                            <h4>Edit Question</h4>
+                            <h4>ویرایش پرسش</h4>
                             <div class="ml-auto">
-                                <a class="btn btn-outline-secondary" href="{{route('questions.index')}}">Back To All
-                                    Questions</a>
+                                <a class="btn btn-outline-secondary" href="{{route('questions.index')}}">بازگشت به
+                                    قسمت پرسرش ها
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
                         <form action="{{route('questions.update' , $question->id)}}" method="post">
                             @method("PUT")
-                            @include("layouts._questionForm" , ['buttonText' => 'Update'])
+                            @include("layouts._questionForm" , ['buttonText' => 'بروزرسانی'])
                         </form>
                     </div>
                 </div>

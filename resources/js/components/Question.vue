@@ -17,8 +17,8 @@
                                 <textarea v-model="body" rows="10" class="form-control" required></textarea>
 
                             </div>
-                            <button class="btn btn-sm btn-success" v-bind:disabled="isInvalid">Update</button>
-                            <button class="btn btn-sm btn-warning" v-on:click="cancel">Cancel</button>
+                            <button class="btn btn-sm btn-success" v-bind:disabled="isInvalid">ویرایش</button>
+                            <button class="btn btn-sm btn-warning" v-on:click="cancel">لغو</button>
                         </div>
                     </div>
                 </form>
@@ -29,8 +29,8 @@
                         <div class="d-flex align-items-center">
                             <h4>{{title}}</h4>
                             <div class="ml-auto">
-                                <a class="btn btn-outline-secondary" href="/questions">Back To All
-                                    Questions</a>
+                                <a class="btn btn-outline-secondary" href="/questions">بازگشت به
+                                    قسمت پرسرش ها</a>
                             </div>
                         </div>
                     </div>
@@ -46,9 +46,9 @@
                                 <div class="col-4">
                                     <div class="ml-auto d-flex">
                                         <a v-if="authorize('modify' , question)" class="btn btn-sm btn-primary"
-                                           v-on:click.prevent="edit">Edit</a>
+                                           v-on:click.prevent="edit">ویرایش</a>
                                         <button v-if="authorize('deleteQuestion' , question)" v-on:click.prevent="destroy"
-                                                type="submit" class="btn btn-danger btn-sm">Delete
+                                                type="submit" class="btn btn-danger btn-sm">حذف
                                         </button>
                                     </div>
                                 </div>

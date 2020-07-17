@@ -25,7 +25,7 @@
 
                 @can('update', $question)
                     <a href="{{route('questions.edit' , $question->id)}}"
-                       class="btn btn-sm btn-primary">Edit</a>
+                       class="btn btn-sm btn-primary">ویرایش</a>
                 @endcan
 
 
@@ -37,7 +37,7 @@
                         @csrf
                         @method('DELETE')
                         <button onclick="return confirm ('Are You Sure Want To Delete This Question?');"
-                                type="submit" class="btn btn-danger btn-sm">Delete
+                                type="submit" class="btn btn-danger btn-sm">حذف
                         </button>
                     </form>
                 @endcan

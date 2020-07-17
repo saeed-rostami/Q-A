@@ -7,10 +7,9 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex align-items-center">
-                            <h4>Questions</h4>
+                            <h4>پرسش ها</h4>
                             <div class="ml-auto">
-                                <a class="btn btn-outline-secondary" href="{{route('questions.create')}}">Ask
-                                    Question</a>
+                                <a class="btn btn-outline-secondary" href="{{route('questions.create')}}">ایجاد پرسش</a>
                             </div>
                         </div>
                     </div>
@@ -20,7 +19,7 @@
                             @include('Questions._excerpt')
                             @empty
                             <div class="alert alert-warning">
-                                <strong>Sorry</strong>There Is no Question Available!
+                                <strong>Sorry</strong>پرسشی ثبت نشده
                             </div>
                         @endforelse
                         <div class="d-flex justify-content-center mt-2">

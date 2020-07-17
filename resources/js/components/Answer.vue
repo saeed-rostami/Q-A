@@ -8,8 +8,8 @@
                 <div class="form-group">
                     <textarea v-model="body" rows="10" class="form-control" required></textarea>
                 </div>
-                <button class="btn btn-sm btn-success" v-bind:disabled="isInvalid">Update</button>
-                <button class="btn btn-sm btn-warning" v-on:click="cancel">Cancel</button>
+                <button class="btn btn-sm btn-success" v-bind:disabled="isInvalid">بروزرسانی</button>
+                <button class="btn btn-sm btn-warning" v-on:click="cancel">لغو</button>
             </form>
             <div v-else>
                 <div v-html="bodyHtml"></div>
@@ -19,9 +19,9 @@
                     <div class="col-4">
                         <div class="ml-auto d-flex">
                             <a v-if="authorize('modify' , answer)" class="btn btn-sm btn-primary"
-                               v-on:click.prevent="edit">Edit</a>
+                               v-on:click.prevent="edit">ویرایش</a>
                             <button v-if="authorize('modify' , answer)" v-on:click.prevent="destroy"
-                                    type="submit" class="btn btn-danger btn-sm">Delete
+                                    type="submit" class="btn btn-danger btn-sm">حذف
                             </button>
                         </div>
                     </div>

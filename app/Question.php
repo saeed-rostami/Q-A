@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
+use Parsedown;
+
 
 class Question extends Model
 {
@@ -49,7 +51,7 @@ class Question extends Model
 
     public function getBodyHtmlAttribute()
     {
-//        return clean($this->bodyHtml());
+        return $this->bodyHtml();
     }
 
 //answers********
@@ -96,6 +98,6 @@ class Question extends Model
     }
     private function bodyHtml()
     {
-//        return Parsedown::instance()->text($this->body);
+        return Parsedown::instance()->text($this->body);
     }
 }
