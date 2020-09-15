@@ -1,6 +1,6 @@
 @csrf
 <div class="form-group {{$errors->has('title') ? 'is-invalid' : ''}}">
-    <label for="question_title">Question Title</label>
+    <label for="question_title">تیتر پرسش</label>
     <input type="text" value="{{old('title' , $question->title ?? '')}}" name="title" id="question_title"
            class="form-control">
 </div>

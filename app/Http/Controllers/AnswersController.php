@@ -25,7 +25,7 @@ class AnswersController extends Controller
      *
      * @param Question $question
      * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function store(Question $question, Request $request)
     {
@@ -53,7 +53,7 @@ class AnswersController extends Controller
      *
      * @param Question $question
      * @param  \App\Answer $answer
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function edit(Question $question, Answer $answer)
@@ -68,7 +68,7 @@ class AnswersController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @param Question $question
      * @param  \App\Answer $answer
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function update(Request $request, Question $question, Answer $answer)
@@ -92,7 +92,7 @@ class AnswersController extends Controller
      *
      * @param Question $question
      * @param  \App\Answer $answer
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function destroy(Question $question, Answer $answer)

@@ -16,7 +16,7 @@ class VoteAnswersController extends Controller
      * Handle the incoming request.
      *
      * @param Answer $answer
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function __invoke(Answer $answer)
     {

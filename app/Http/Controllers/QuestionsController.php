@@ -16,7 +16,7 @@ class QuestionsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function index()
     {
@@ -27,7 +27,7 @@ class QuestionsController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function create()
     {
@@ -39,11 +39,16 @@ class QuestionsController extends Controller
      * Store a newly created resource in storage.
      *
      * @param AskQuestionRequest $request
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function store(AskQuestionRequest $request)
     {
-        $request->user()->questions()->create($request->only('title', 'body'));
+        $request->user()->questions()->create($request->validate([
+            'title' => 'required|min:6|string',
+            'body' => 'required|min:10|string',
+        ]));
+
+
         return redirect()->route('questions.index')->with('success', "Your Question Submitted!");
     }
 
@@ -51,7 +56,7 @@ class QuestionsController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Question $question
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function show(Question $question)
     {
@@ -63,7 +68,7 @@ class QuestionsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param Question $question
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      */
     public function edit(Question $question)
     {
@@ -76,7 +81,7 @@ class QuestionsController extends Controller
      *
      * @param AskQuestionRequest $request
      * @param  \App\Question $question
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function update(AskQuestionRequest $request, Question $question)
@@ -98,7 +103,7 @@ class QuestionsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Question $question
-     * @return \Illuminate\Http\Response
+//     * @return \Illuminate\Http\Response
      * @throws \Exception
      */
     public function destroy(Question $question)

@@ -4037,6 +4037,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
+//
 
 
 
@@ -4175,6 +4176,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
 //
 //
 //
@@ -40898,7 +40900,7 @@ var render = function() {
                     staticClass: "btn btn-sm btn-success",
                     attrs: { disabled: _vm.isInvalid }
                   },
-                  [_vm._v("Update")]
+                  [_vm._v("بروزرسانی")]
                 ),
                 _vm._v(" "),
                 _c(
@@ -40907,7 +40909,7 @@ var render = function() {
                     staticClass: "btn btn-sm btn-warning",
                     on: { click: _vm.cancel }
                   },
-                  [_vm._v("Cancel")]
+                  [_vm._v("لغو")]
                 )
               ]
             )
@@ -40929,7 +40931,7 @@ var render = function() {
                               }
                             }
                           },
-                          [_vm._v("Edit")]
+                          [_vm._v("ویرایش")]
                         )
                       : _vm._e(),
                     _vm._v(" "),
@@ -40946,7 +40948,7 @@ var render = function() {
                               }
                             }
                           },
-                          [_vm._v("Delete\n                        ")]
+                          [_vm._v("حذف\n                        ")]
                         )
                       : _vm._e()
                   ])
@@ -41033,7 +41035,7 @@ var render = function() {
                               }
                             }
                           },
-                          [_vm._v("Show More")]
+                          [_vm._v("نمایش\n                        بیشتر")]
                         )
                       ])
                     : _vm._e()
@@ -41173,7 +41175,7 @@ var render = function() {
                     staticClass: "btn btn-lg btn-outline-primary",
                     attrs: { disabled: _vm.isInvalid, type: "submit" }
                   },
-                  [_vm._v("Send")]
+                  [_vm._v("ارسال")]
                 )
               ])
             ]
@@ -41189,7 +41191,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-title" }, [
-      _c("h3", [_vm._v("Your Answer")])
+      _c("h3", [_vm._v("پاسخ شما")])
     ])
   }
 ]
@@ -41288,7 +41290,7 @@ var render = function() {
                         staticClass: "btn btn-sm btn-success",
                         attrs: { disabled: _vm.isInvalid }
                       },
-                      [_vm._v("Update")]
+                      [_vm._v("ویرایش")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -41297,7 +41299,7 @@ var render = function() {
                         staticClass: "btn btn-sm btn-warning",
                         on: { click: _vm.cancel }
                       },
-                      [_vm._v("Cancel")]
+                      [_vm._v("لغو")]
                     )
                   ])
                 ])
@@ -41342,7 +41344,7 @@ var render = function() {
                                     }
                                   }
                                 },
-                                [_vm._v("Edit")]
+                                [_vm._v("ویرایش")]
                               )
                             : _vm._e(),
                           _vm._v(" "),
@@ -41361,7 +41363,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "Delete\n                                    "
+                                    "حذف\n                                    "
                                   )
                                 ]
                               )
@@ -41403,7 +41405,7 @@ var staticRenderFns = [
           staticClass: "btn btn-outline-secondary",
           attrs: { href: "/questions" }
         },
-        [_vm._v("Back To All\n                                Questions")]
+        [_vm._v("بازگشت به\n                                قسمت پرسرش ها")]
       )
     ])
   }
